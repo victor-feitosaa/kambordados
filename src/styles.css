@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Oi&family=Outfit:wght@100..900&family=Rammetto+One&display=swap');
+
+
+@import "tailwindcss";
+
+
+/* Variáveis CSS para as fontes */
+
+
+
+
+.fonte-principal {
+  font-family: "Rammetto One", serif;
+  
+}
+
+.fonte-secundaria {
+  font-family: 'Outfit', sans-serif; /* Define a fonte Outfit */
+  
+}
+
+.verde-claro {
+  color: #606c38;
+}
+.bg-verde-claro {
+  background-color: #606c38;
+}
+
+
+.verde-escuro {
+  color: #283618;
+}
+.bg-verde-escuro {
+  background-color: #283618;
+}
+
+.bege {
+  color: #fefae0;
+}
+.bg-bege {
+  background-color: #fefae0;
+}
+
+
+.laranja-claro {
+  color: #dda15e;
+}
+.bg-laranja-claro {
+  background-color: #dda15e;
+}
+
+.laranja-escuro {
+  color: #bc6c25;
+}
+.bg-laranja-escuro {
+  background-color: #bc6c25;
+}
