@@ -1,7 +1,18 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 import Card from "../Card";
 
 export default function Produtos() {
+    const { ref: titleRef, inView: titleInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5, // Ajuste o threshold conforme necessário
+    });
+
+    const { ref: cardsRef, inView: cardsInView } = useInView({
+        triggerOnce: true,
+        threshold: 0.5, // Ajuste o threshold conforme necessário
+    });
+
     return (
         <section className="min-h-screen px-8 md:px-20 flex flex-col justify-center items-center bg-verde-escuro bege fonte-secundaria relative overflow-hidden">
 
@@ -10,12 +21,12 @@ export default function Produtos() {
             <div className="bg-verde-claro w-1/2 h-64 absolute top-0 right-0  z-5"></div>
 
             {/* Conteúdo principal */}
-            <div className="text-center py-20 z-20 relative">
+            <div ref={titleRef} className={`text-center py-20 z-20 relative transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <h2 className="text-3xl md:text-5xl lg:text-[52px] font-bold fonte-principal">Bordados <br/>Personalizados</h2>
                 <p className="text-lg">Com o melhor material no mercado</p>
             </div>
 
-            <div className="flex flex-col justify-center items-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 relative">
+            <div ref={cardsRef} className={`flex flex-col justify-center items-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 relative transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <Card
                     imageSrc="src/assets/Captura20de20tela202023-10-28200.png"
                     altText="Bordados Maxi"
