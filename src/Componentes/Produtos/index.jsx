@@ -32,7 +32,7 @@ export default function Produtos() {
                     altText="Bordados Maxi"
                     title="Bordados Maxi"
                     description="Até 100% feito em linha, mesclando com céu em tinta"
-                />F
+                />
                 <Card
                     imageSrc="public\assets\fefe21388c2e91a7b79fa9a0577d7ab0.png"
                     altText="Bordados com contornos"

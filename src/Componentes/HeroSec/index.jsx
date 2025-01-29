@@ -18,7 +18,7 @@ export default function HeroSec() {
                 {/* Imagem (visível apenas em telas grandes) */}
                 <div className="hidden lg:w-1/2 lg:flex lg:justify-center lg:items-center lg:visible">
                     <img
-                        src="public\assets\carolsemfundo.png"
+                        src="assets\carolsemfundo.png"
                         alt="Foto de Carol"
                         className="bg-laranja-escuro w-full h-auto max-w-[558px] mx-auto rounded-[100%] shadow-lg relative z-20 animate-fade-left animate-once"
                     />
