@@ -29,19 +29,19 @@ export default function Tamanhos() {
 
             <div ref={cardsRef} className={`flex flex-col items-center justify-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <Card
-                    imageSrc="public\assets\Kambordados-01-23-2025_07_07_PM.png"
+                    imageSrc="assets\Kambordados-01-23-2025_07_07_PM.png"
                     altText="chaveiro"
                     title="Chaveiro (5cm): a partir de R$30"
                     description=""
                 />
                 <Card
-                    imageSrc="public\assets\Kambordados2.png"
+                    imageSrc="assets\Kambordados2.png"
                     altText="Tamanho médio"
                     title="16cm: a partir de R$150"
                     description=""
                 />
                 <Card
-                    imageSrc="public\assets\Kambordados3.png"
+                    imageSrc="assets\Kambordados3.png"
                     altText="Tamanho grande"
                     title="22cm: a partir de R$200"
                     description=""
