@@ -32,7 +32,7 @@ export default function Sobre() {
         {/* Imagem */}
         <div ref={imgRef} className="w-full lg:w-1/2 flex justify-center">
           <img
-            src="public/assets/carolsemfundo2.png"
+            src="public\assets\carolsemfundo2.png"
             alt="Foto de Carol"
             className={`bg-laranja-escuro w-[40%] lg:w-[70%] max-w-[558px] rounded-[100%] shadow-lg transition-opacity duration-1000 ${
               imgInView
