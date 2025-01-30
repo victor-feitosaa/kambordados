@@ -48,7 +48,7 @@ export default function Tamanhos() {
 
                 <Card 
                     images={[
-                        
+                        "assets/Kambordados2.jpg",
                         "assets/medio1.jpg",
                         "assets/medio2.jpg",
                         "assets/medio3.jpg",
@@ -61,7 +61,7 @@ export default function Tamanhos() {
 
                 <Card 
                     images={[
-                        
+                        "assets/Kambordados2.jpg",
                         "assets/grande1.jpg",
                         "assets/grande2.jpg",
                         "assets/grande3.jpg",

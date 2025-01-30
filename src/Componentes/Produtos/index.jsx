@@ -59,7 +59,8 @@ export default function Produtos() {
                     images={[
                         "assets/pet1.jpeg",
                         "assets/pet2.jpeg",
-                        "assets/pet3.jpeg"
+                        "assets/pet3.jpeg",
+                        "assets/pets4.jpg"
                     ]}
                     altText="Bordados com Pets"
                     title="Bordados com Pets"
