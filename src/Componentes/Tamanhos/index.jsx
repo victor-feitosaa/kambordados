@@ -28,7 +28,55 @@ export default function Tamanhos() {
             </div>
 
             <div ref={cardsRef} className={`flex flex-col items-center justify-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
-                <Card
+
+
+                <Card 
+                    images={[
+                        "assets/chavbase.png",
+                        "assets/chav1.jpg",
+                        "assets/chav2.jpg",
+                        "assets/chav3.jpg",
+                        "assets/chav4.jpg",
+                        "assets/chav5.jpeg",
+                        "assets/chav6.jpeg"
+                        
+                    ]}
+                    altText="Chaveiros"
+                    title="Chaveiro (5cm): a partir de R$30"
+                    description=""
+                />
+
+                <Card 
+                    images={[
+                        
+                        "assets/medio1.jpg",
+                        "assets/medio2.jpg",
+                        "assets/medio3.jpg",
+         
+                    ]}
+                    altText="Tamanho médio"
+                    title="16cm: a partir de R$150"
+                    description=""
+                />
+
+                <Card 
+                    images={[
+                        
+                        "assets/grande1.jpg",
+                        "assets/grande2.jpg",
+                        "assets/grande3.jpg",
+                   
+                    ]}
+                    altText="Tamanho grande"
+                    title="22cm: a partir de R$200"
+                    description=""
+                />
+
+
+
+
+
+                {/* <Card
                     imageSrc="assets\Kambordados-01-23-2025_07_07_PM.png"
                     altText="chaveiro"
                     title="Chaveiro (5cm): a partir de R$30"
@@ -45,7 +93,7 @@ export default function Tamanhos() {
                     altText="Tamanho grande"
                     title="22cm: a partir de R$200"
                     description=""
-                />
+                /> */}
             </div>
 
             <div ref={noteRef} className={`pb-20 z-20 transition-opacity duration-1000 ${noteInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
