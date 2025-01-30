@@ -28,19 +28,19 @@ export default function Produtos() {
 
             <div ref={cardsRef} className={`flex flex-col justify-center items-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 relative transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <Card
-                    imageSrc="assets\Captura20de20tela202023-10-28200.png"
+                    imageSrc="assets\maxi1.jpeg"
                     altText="Bordados Maxi"
                     title="Bordados Maxi"
                     description="Até 100% feito em linha, mesclando com céu em tinta"
                 />
                 <Card
-                    imageSrc="assets\fefe21388c2e91a7b79fa9a0577d7ab0.png"
+                    imageSrc="assets\linha1.jpeg"
                     altText="Bordados com contornos"
                     title="Bordados com contornos em linha"
                     description="Podendo adicionar pintura em aquarela"
                 />
                 <Card
-                    imageSrc="assets\images.png"
+                    imageSrc="assets\pet1.jpeg"
                     altText="Bordados com Pets"
                     title="Bordados com Pets"
                     description="Com bordados perfeitos para seu pet"
