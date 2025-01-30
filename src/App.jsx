@@ -6,17 +6,15 @@ import Tamanhos from './Componentes/Tamanhos';
 import Sobre from './Componentes/Sobre';
 import Contato from './Componentes/Contato';
 
-
-
 const App = () => {
   return (
-    <div className="App ">
-      <Header />
-      <HeroSec />
-      <Produtos />
-      <Tamanhos />
-      <Sobre />
-      <Contato />
+    <div className="App">
+      <Header /> 
+      <section id="home"><HeroSec /></section>
+      <section id="produtos"><Produtos /></section>
+      <section id="tamanhos"><Tamanhos /></section>
+      <section id="sobre"><Sobre /></section>
+      <section id="contato"><Contato /></section>
     </div>
   );
 };

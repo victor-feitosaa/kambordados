@@ -24,7 +24,7 @@ export default function Tamanhos() {
             {/* Conteúdo principal */}
             <div ref={titleRef} className={`text-center py-20 z-20 transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <h2 className="text-3xl lg:text-[52px] font-bold fonte-principal">Tamanhos</h2>
-                <p className="text-lg">Temos três tamanhos disponíveis:</p>
+                <p className="text-lg pt-5">Temos três tamanhos disponíveis:</p>
             </div>
 
             <div ref={cardsRef} className={`flex flex-col items-center justify-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>

@@ -23,14 +23,14 @@ export default function Produtos() {
             {/* Conteúdo principal */}
             <div ref={titleRef} className={`text-center py-20 z-20 relative transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <h2 className="text-3xl md:text-5xl lg:text-[52px] font-bold fonte-principal">Bordados <br/>Personalizados</h2>
-                <p className="text-lg">Com o melhor material no mercado</p>
+                <p className="text-lg pt-5">Com o melhor material no mercado</p>
             </div>
 
             <div ref={cardsRef} className={`flex flex-col justify-center items-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 relative transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <Card
                     imageSrc="assets\maxi1.jpeg"
                     altText="Bordados Maxi"
-                    title="Bordados Maxi"
+                    title="Bordados Maxi" 
                     description="Até 100% feito em linha, mesclando com céu em tinta"
                 />
                 <Card
