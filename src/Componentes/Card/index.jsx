@@ -15,8 +15,8 @@ export default function Card({ images, altText, title, description }) {
           index = (index + 1) % images.length;
           setCurrentImage(images[index]);
           setFade(false); // Remove o efeito de fade após a troca
-        }, 300); // Tempo da animação
-      }, 1500); // Tempo de troca de imagem
+        }, 400); // Tempo da animação
+      }, 2500); // Tempo de troca de imagem
     } else {
       setCurrentImage(images[0]); // Volta para a imagem inicial quando o mouse sai
     }
