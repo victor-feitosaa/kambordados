@@ -35,7 +35,7 @@ export default function Card({ images, altText, title, description }) {
         <img
           src={currentImage}
           alt={altText}
-          className={`w-[50vh] lg:w-full h-[70vh] lg:h-[356px] object-cover cursor-pointer border-[3px] border-[#bc6c25] lg:border-none shadow-md rounded-[15px]  transition-opacity duration-300 ${fade ? "opacity-0" : "opacity-100"}`}
+          className={`w-[45vh] lg:w-full h-[60vh] lg:h-[356px] object-cover cursor-pointer border-[3px] border-[#bc6c25] lg:border-none shadow-md rounded-[15px]  transition-opacity duration-300 ${fade ? "opacity-0" : "opacity-100"}`}
         />
       </div>
 
