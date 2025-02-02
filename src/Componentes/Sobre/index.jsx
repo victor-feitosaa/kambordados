@@ -18,7 +18,7 @@ export default function Sobre() {
   });
 
   return (
-    <section className="min-h-screen bg-verde-claro fonte-secundaria flex flex-col lg:flex-row relative overflow-hidden bege">
+    <section className="min-h-screen bg-verde-claro fonte-secundaria flex flex-col lg:flex-row relative  bege">
       {/* Div decorativa superior */}
       <div className="bg-verde-claro w-1/2 h-64 absolute top-0 rounded-tl-[350px] z-10"></div>
       <div className="bg-verde-escuro w-1/2 h-64 absolute top-0 z-5"></div>

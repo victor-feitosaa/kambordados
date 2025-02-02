@@ -21,7 +21,7 @@ export default function Contato() {
     });
 
     return (
-        <section className="flex justify-center items-center min-h-screen bege bg-verde-escuro px-6 lg:px-[86px] py-10 lg:py-0">
+        <section className="flex justify-center items-center min-h-screen bege bg-verde-escuro px-6 lg:px-[86px] py-10 lg:py-0 z-20">
             <div className="w-full max-w-6xl">
                 {/* Título */}
                 <div ref={titleRef} className={`w-full mb-8 lg:mb-15 transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>

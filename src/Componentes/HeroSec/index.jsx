@@ -10,8 +10,13 @@ export default function HeroSec() {
       };
 
     return (
-        <section className="h-[600px] lg:h-[800px] relative overflow-hidden ">
+        <section className="h-[600px] lg:h-[800px] relative  ">
             <div className="h-full px-[86px] flex flex-row  bg-verde-claro bege ">
+
+            
+            <img src="assets/plantapnghd.png" className="absolute top-130 lg:top-140 left-0 lg:left-10 rotate-120 h-[30vh] lg:h-[80vh]   z-20   animate-fade-right animate-once"/>
+            <img src="assets/plantapnghdDireita.png" className="absolute top-140 lg:top-170 right-0 lg:right-0   h-[20vh] lg:h-[50vh]   z-20  animate-fade-right animate-once"/>
+
 
                 {/* Conteúdo principal */}
                 <div className="w-full lg:w-1/2 flex flex-col justify-center items-center gap-[64px] relative z-20 animate-fade-right animate-once">
