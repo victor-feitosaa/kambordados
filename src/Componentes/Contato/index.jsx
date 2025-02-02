@@ -57,10 +57,10 @@ export default function Contato() {
                 </div>
 
                 {/* Botões */}
-                <div ref={buttonsRef} className={`w-full flex flex-col-reverse sm:flex-row gap-8 lg:gap-[40px] items-center justify-around mt-10 lg:mt-15 transition-opacity duration-1000 ${buttonsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
+                <div ref={buttonsRef} className={`w-full flex flex-col-reverse sm:flex-row gap-8 lg:gap-[40px] items-center justify-center mt-10 lg:mt-15 transition-opacity duration-1000 ${buttonsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                     <div>
                         <a href="https://wa.me/556899710654" target="_blank">
-                            <button className="flex mb-5 gap-4 px-13 sm:px-10  border-b-green-100 border-7 lg:shadow-2xl text-xl sm:text-2xl font-bold items-center h-[80px] sm:h-[100px] w-full sm:w-[280px] lg:w-[320px] rounded-[150px] cursor-pointer text-white bg-gradient-to-r from-green-400 to-lime-500 hover:bg-gradient-to-l hover:from-green-300 hover:to-lime-400 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-teal-700">
+                            <button className="flex  gap-4 px-13 sm:px-10  border-b-green-100 border-7 lg:shadow-2xl text-xl sm:text-2xl font-bold items-center h-[80px] sm:h-[100px] w-full sm:w-[280px] lg:w-[320px] rounded-[150px] cursor-pointer text-white bg-gradient-to-r from-green-400 to-lime-500 hover:bg-gradient-to-l hover:from-green-300 hover:to-lime-400 focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-teal-700">
                                 <IoLogoWhatsapp className="w-8 h-8 sm:w-10 sm:h-10" />
                                 WhatsApp
                                 <FaExternalLinkAlt className="w-6 h-6" />

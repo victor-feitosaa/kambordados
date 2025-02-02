@@ -20,7 +20,7 @@ export default function Tamanhos() {
             {/* Cards */}
             <div 
                 ref={cardsRef} 
-                className={`flex flex-col items-center justify-center lg:flex-row gap-8 w-full pb-20 max-w-6xl z-20 transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}
+                className={`flex flex-col items-center justify-center lg:flex-row gap-[80px] lg:gap-10 w-full pb-20 max-w-6xl z-20 transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}
             >
                 {/* Card 1 */}
                 <div 

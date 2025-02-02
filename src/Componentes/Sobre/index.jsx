@@ -27,6 +27,10 @@ export default function Sobre() {
       <div className="bg-verde-claro w-full h-[20vh] lg:h-[30vh] absolute bottom-0 rounded-bl-[350px] z-10"></div>
       <div className="bg-verde-escuro w-full h-[20vh] lg:h-[30vh] absolute bottom-0 z-5"></div>
 
+
+      <img src="assets/floresbg2.png" className="absolute z-20 -top-16 lg:-top-30 right-0   h-[20vh] lg:h-[45vh]" />
+
+
       {/* Conteúdo principal */}
       <div className="flex flex-1 flex-col lg:flex-row items-center justify-center gap-10 px-6 lg:px-[86px] relative z-20">
         {/* Imagem */}
