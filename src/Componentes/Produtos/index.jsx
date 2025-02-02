@@ -4,23 +4,24 @@ import Card from "../Card";
 
 export default function Produtos() {
     const { ref: titleRef, inView: titleInView } = useInView({ triggerOnce: true, threshold: 0.5 });
-    const { ref: cardsRef, inView: cardsInView } = useInView({ triggerOnce: true, threshold: 0.5 });
+    const { ref: cardsRef, inView: cardsInView } = useInView({ triggerOnce: true, threshold: 0.2 });
 
     // Estado para controlar qual card está com hover ativo
     const [hoveredCard, setHoveredCard] = useState(null);
 
     return (
-        <section className="min-h-screen px-8 md:px-20 flex flex-col justify-center items-center bg-verde-escuro bege fonte-secundaria relative overflow-hidden">
+        <section className="min-h-screen px-10 md:px-20 flex flex-col justify-center items-center bg-verde-escuro bege fonte-secundaria relative overflow-hidden">
 
             {/* Decoração topo direito */}
             <div className="bg-verde-escuro w-1/2 h-64 absolute top-0 right-0 rounded-tr-[350px] z-10"></div>
             <div className="bg-verde-claro w-1/2 h-64 absolute top-0 right-0 z-5"></div>
 
             {/* Conteúdo principal */}
-            <div ref={titleRef} className={`text-center py-20 z-20 relative transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
+            <div ref={titleRef} className={`text-center pb-10 pt-20 z-20 relative transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <h2 className="text-3xl md:text-5xl lg:text-[52px] font-bold fonte-principal">Bordados <br/>Personalizados</h2>
                 <p className="text-lg pt-5">Com o melhor material no mercado</p>
             </div>
+
 
             <div 
                 ref={cardsRef} 

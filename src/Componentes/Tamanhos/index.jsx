@@ -4,7 +4,7 @@ import Card from "../Card";
 
 export default function Tamanhos() {
     const { ref: titleRef, inView: titleInView } = useInView({ triggerOnce: true, threshold: 0.5 });
-    const { ref: cardsRef, inView: cardsInView } = useInView({ triggerOnce: true, threshold: 0.5 });
+    const { ref: cardsRef, inView: cardsInView } = useInView({ triggerOnce: true, threshold: 0.2 });
     const { ref: noteRef, inView: noteInView } = useInView({ triggerOnce: true, threshold: 0.5 });
 
     const [hoveredCard, setHoveredCard] = useState(null);
