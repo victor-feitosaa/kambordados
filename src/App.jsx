@@ -5,6 +5,7 @@ import Produtos from './Componentes/Produtos';
 import Tamanhos from './Componentes/Tamanhos';
 import Sobre from './Componentes/Sobre';
 import Contato from './Componentes/Contato';
+import Footer from './Componentes/Footer';
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <section id="tamanhos"><Tamanhos /></section>
       <section id="sobre"><Sobre /></section>
       <section id="contato"><Contato /></section>
+      <Footer />
     </div>
   );
 };

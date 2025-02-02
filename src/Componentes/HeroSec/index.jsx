@@ -11,15 +11,15 @@ export default function HeroSec() {
 
     return (
         <section className="h-[600px] lg:h-[800px] relative  ">
-            <div className="h-full px-[86px] flex flex-row  bg-verde-claro bege ">
+            <div className="h-full px-[86px] flex flex-row justify-center  bg-verde-claro bege ">
 
             
-            <img src="assets/plantapnghd.png" className="absolute top-130 lg:top-140 left-0 lg:left-10 rotate-120 h-[30vh] lg:h-[80vh]   z-20   animate-fade-right animate-once"/>
-            <img src="assets/plantapnghdDireita.png" className="absolute top-140 lg:top-170 right-0 lg:right-0   h-[20vh] lg:h-[50vh]   z-20  animate-fade-right animate-once"/>
+            <img src="assets/plantapnghd.png" className="absolute top-130 lg:top-140 left-0 lg:left-10 rotate-120 h-[30vh] lg:h-[80vh]   z-20  " />
+            <img src="assets/plantapnghdDireita.png" className="absolute top-140 lg:top-170 right-0 lg:right-0   h-[20vh] lg:h-[50vh]   z-20  "/>
 
 
                 {/* Conteúdo principal */}
-                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center gap-[64px] relative z-20 animate-fade-right animate-once">
+                <div className="w-full lg:w-1/2 flex flex-col justify-center items-center gap-[64px] relative z-20 animate-fade-right animate-once max-w-6xl">
                     <h1 className="fonte-principal text-center text-4xl md:text-5xl lg:text-[52px] md:leading-20">Transforme suas memórias em arte!</h1>
                     <div>
                         <button className="bg-[#bc6c25] hover:bg-[#a05b1f] h-[76px] w-[200px] md:h-[76px] md:w-[269px] rounded-[42px] shadow-lg font-bold cursor-pointer fonte-secundaria text-xs lg:text-lg" onClick={() => scrollToSection('contato')}>
@@ -29,7 +29,7 @@ export default function HeroSec() {
                 </div>
 
                 {/* Imagem (visível apenas em telas grandes) */}
-                <div className="hidden lg:w-1/2 lg:flex lg:justify-center lg:items-center lg:visible">
+                <div className="hidden lg:w-1/2 lg:flex lg:justify-center lg:items-center lg:visible max-w-6xl">
                     <img
                         src="assets\carolsemfundo.png"
                         alt="Foto de Carol"
