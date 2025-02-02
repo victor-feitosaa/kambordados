@@ -31,11 +31,11 @@ export default function Card({ images, altText, title, description }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Imagem com transição */}
-      <div className="relative w-full flex justify-center px-[20%] lg:px-0 lg:border-[6px]  border-[#bc6c25] hover:border-[#efe7e1] rounded-[20px] z-16" >
+      <div className="relative w-full flex justify-center px-0 lg:border-[6px]  border-[#bc6c25] hover:border-[#efe7e1] rounded-[20px] z-16" >
         <img
           src={currentImage}
           alt={altText}
-          className={`w-full h-[200px] lg:h-[356px] object-cover cursor-pointer border-[3px] border-[#bc6c25] lg:border-none shadow-md rounded-[15px]  transition-opacity duration-300 ${fade ? "opacity-0" : "opacity-100"}`}
+          className={`w-[153px] lg:w-full h-[200px] lg:h-[356px] object-cover cursor-pointer border-[3px] border-[#bc6c25] lg:border-none shadow-md rounded-[15px]  transition-opacity duration-300 ${fade ? "opacity-0" : "opacity-100"}`}
         />
       </div>
 
