@@ -10,7 +10,7 @@ export default function Tamanhos() {
     const [hoveredCard, setHoveredCard] = useState(null);
 
     return (
-        <section className="min-h-screen px-8 lg:px-20 flex flex-col justify-center items-center bg-verde-escuro bege fonte-secundaria relative overflow-hidden">
+        <section className="min-h-screen px-10 lg:px-20 flex flex-col justify-center items-center bg-verde-escuro bege fonte-secundaria relative overflow-hidden">
             {/* Título */}
             <div ref={titleRef} className={`text-center py-20 z-20 transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <h2 className="text-3xl lg:text-[52px] font-bold fonte-principal">Tamanhos</h2>
