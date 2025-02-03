@@ -17,7 +17,7 @@ export default function Produtos() {
             <div className="bg-verde-claro w-1/2 h-64 absolute top-0 right-0 z-5"></div>
 
             {/* Conteúdo principal */}
-            <div ref={titleRef} className={`text-center pb-10 pt-20 z-20 relative transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
+            <div ref={titleRef} className={`text-center pb-27 py-20 z-20 relative transition-opacity duration-1000 ${titleInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}>
                 <h2 className="text-3xl md:text-5xl lg:text-[52px] font-bold fonte-principal">Bordados <br/>Personalizados</h2>
                 <p className="text-lg pt-5">Com o melhor material no mercado</p>
             </div>

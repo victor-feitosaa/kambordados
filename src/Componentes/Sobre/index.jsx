@@ -16,6 +16,10 @@ export default function Sobre() {
     triggerOnce: true,
     threshold: 0.5,
   });
+  const { ref: floresRef, inView: floresInView } = useInView({
+    triggerOnce: true,
+    threshold: 0.2,
+  });
 
   return (
     <section className="min-h-screen bg-verde-claro fonte-secundaria flex flex-col lg:flex-row relative  bege">
@@ -28,7 +32,11 @@ export default function Sobre() {
       <div className="bg-verde-escuro w-full h-[20vh] lg:h-[30vh] absolute bottom-0 z-5"></div>
 
 
-      <img src="assets/floresbg2.png" className="absolute z-20 -top-16 lg:-top-30 right-0   h-[20vh] lg:h-[45vh]" />
+      <img ref={floresRef} src="assets/floresbg2.png" className={`absolute z-20 -top-16 lg:-top-30 right-0   h-[20vh] lg:h-[45vh]  transition-opacity duration-1000 ${
+              floresInView
+                ? "animate-fade animate-once animate-duration-[1550ms]"
+                : "opacity-0"
+            }`} />
 
 
       {/* Conteúdo principal */}

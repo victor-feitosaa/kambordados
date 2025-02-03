@@ -1,4 +1,5 @@
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 export default function HeroSec() {
 
@@ -9,13 +10,16 @@ export default function HeroSec() {
         }
       };
 
+      const { ref: imgRef, inView: imgInView } = useInView({ triggerOnce: true, threshold: 0.2 });
+
+
     return (
         <section className="h-[600px] lg:h-[800px] relative  ">
             <div className="h-full px-[86px] flex flex-row justify-center  bg-verde-claro bege ">
 
             
-            <img src="assets/plantapnghd.png" className="absolute top-130 lg:top-140 left-0 lg:left-10 rotate-120 h-[30vh] lg:h-[80vh]   z-20  " />
-            <img src="assets/plantapnghdDireita.png" className="absolute top-140 lg:top-170 right-0 lg:right-0   h-[20vh] lg:h-[50vh]   z-20  "/>
+            <img ref={imgRef} src="assets/plantapnghd.png" className={`absolute top-130 lg:top-140 left-0 lg:left-10 rotate-120 h-[30vh] lg:h-[80vh]   z-20  transition-opacity duration-1000 ${imgInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`} />
+            <img ref={imgRef} src="assets/plantapnghdDireita.png" className={`absolute top-140 lg:top-170 right-0 lg:right-0   h-[20vh] lg:h-[50vh]   z-20 transition-opacity duration-1000 ${imgInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'} `}/>
 
 
                 {/* Conteúdo principal */}
