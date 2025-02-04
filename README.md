@@ -47,13 +47,13 @@ cd kam-bordados
 Instale as dependências:
 
 npm install
-# ou
+ ou
 yarn install
 
 Inicie o servidor local:
 
 npm start
-# ou
+ ou
 yarn start
 
 Acesse o projeto no navegador:
