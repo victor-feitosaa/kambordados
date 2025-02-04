@@ -20,7 +20,7 @@ export default function Tamanhos() {
             {/* Cards */}
             <div 
                 ref={cardsRef} 
-                className={`flex flex-col items-center justify-center lg:flex-row gap-[80px] lg:gap-10 w-full pb-20 max-w-6xl z-20 transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}
+                className={`flex flex-col items-center justify-center lg:flex-row gap-[80px] lg:gap-10 flex-wrap xl:flex-nowrap  w-full pb-20 max-w-6xl z-20 transition-opacity duration-1000 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}
             >
                 {/* Card 1 */}
                 <div 
@@ -46,8 +46,8 @@ export default function Tamanhos() {
                     <Card 
                         images={["assets/chavbase.png", "assets/chav1.jpg", "assets/chav2.jpg", "assets/chav3.jpg", "assets/chav4.jpg", "assets/chav5.jpeg", "assets/chav6.jpeg"]}
                         altText="Chaveiros"
-                        title="Chaveiro (5cm): a partir de R$30"
-                        description=""
+                        title="Chaveiro (5cm) "
+                        description="a partir de R$30"
                     />
                 </div>
 
@@ -75,8 +75,8 @@ export default function Tamanhos() {
                     <Card 
                         images={["assets/Kambordados2.jpg", "assets/medio1.jpg", "assets/medio2.jpg", "assets/medio3.jpg"]}
                         altText="Tamanho médio"
-                        title="16cm: a partir de R$150"
-                        description=""
+                        title="16cm "
+                        description="a partir de R$150"
                     />
                 </div>
 
@@ -104,8 +104,8 @@ export default function Tamanhos() {
                     <Card 
                         images={["assets/Kambordados2.jpg", "assets/grande1.jpg", "assets/grande2.jpg", "assets/grande3.jpg"]}
                         altText="Tamanho grande"
-                        title="22cm: a partir de R$200"
-                        description=""
+                        title="22cm "
+                        description="a partir de R$200"
                     />
                 </div>
             </div>

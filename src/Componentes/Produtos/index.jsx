@@ -25,7 +25,7 @@ export default function Produtos() {
 
             <div 
                 ref={cardsRef} 
-                className={`flex flex-col justify-center items-center lg:flex-row gap-[80px] lg:gap-10 w-full pb-20 max-w-6xl z-20 relative transition-opacity duration-1000 
+                className={`flex flex-col justify-center items-center lg:flex-row gap-[80px] lg:gap-10 w-full pb-20 max-w-6xl flex-wrap xl:flex-nowrap z-20 relative transition-opacity duration-1000 
                 ${cardsInView ? 'animate-fade animate-once animate-duration-[1550ms]' : 'opacity-0'}`}
             >
                 {/* Card 1 */}

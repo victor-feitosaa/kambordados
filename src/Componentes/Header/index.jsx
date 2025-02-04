@@ -18,7 +18,6 @@ export default function Header() {
             <div className='lg:w-1/2 max-w-6xl'>
                 <ul className='hidden lg:visible lg:flex lg:flex-row lg:justify-between lg:font-semibold text-lg max-w-6xl' >
                     
-                <li><button className='cursor-pointer' onClick={() => scrollToSection('home')}>Início</button></li>
                 <li><button className='cursor-pointer' onClick={() => scrollToSection('produtos')}>Produtos</button></li>
                 <li><button className='cursor-pointer' onClick={() => scrollToSection('tamanhos')}>Tamanhos</button></li>
                 <li><button className='cursor-pointer' onClick={() => scrollToSection('sobre')}>Sobre</button></li>
